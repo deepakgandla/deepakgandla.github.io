@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta name="theme-color" content="#9d4edd">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap" rel="stylesheet">
+        <title>Site</title>
+        <style>
+            body{
+                background-image: url("images/IMG_5555-01.jpeg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 150%;
+            }
+            h5{
+                margin-top: 100px;
+                font-family: 'Archivo Black', sans-serif;
+                font-size: 3em;
+                margin-top: 1em;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ff66ff;
+            }
+
+            .text{
+                color: thistle;
+                text-align: center;
+                font-family:  "Trirong";
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 3px #aaaaaa;
+            }
+
+            #firstpara{
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            footer{
+                background-color: grey;
+                height: 140px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 10px;
+                margin-bottom: 50px;
+            }
+            #naturediscription{
+                font-size: 36px;;
+                color:plum;
+                margin-top: 1px;
+                background-color: powderblue;
+                padding-left: 20px;
+                margin-bottom: 100px;
+                margin-left: 550px;
+                border-radius: 10px;
+            }
+
+
+            .playdiv{
+                animation-name: playanimation;
+                animation-duration: 5s;
+                animation-fill-mode: backwards;
+                animation-play-state: paused;
+                animation-iteration-count: infinite;
+
+            }
+
+            @keyframes playanimation {
+                0%{
+                    float: left;
+                    margin-left: 20px;
+                    height: 200px;
+                    width: 200px;
+                    background-color: purple;
+                    font-size: 0px;
+                    box-shadow: 10px 10px 5px #3f3945; 
+                }
+                
+                100%{
+                    float: left;
+                    margin-left: 20px;
+                    font-size: 90px;
+                    background-color: palevioletred;
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 100px;
+                    box-shadow: 10px 10px 5px #3f3945;
+                    padding-bottom: 10px;
+                }
+            
+            }
+            
+            
+            .playdiv:hover{
+                animation-fill-mode: forwards;
+                animation-play-state: running;
+            }
+
+            .playdiv p{
+                color: white;
+                text-align: center;
+                padding: 0px 30px 30px 30px;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            }
+
+            #middle{
+                text-align: center;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: 100;
+            }
+
+            .middlepara{
+                text-indent: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+                text-shadow: 3px 3px 3px #aaaaaa;
+                font-size: 32px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #meDiv{
+                background-color: greenyellow;
+                height: 50px;
+                width: 90%;
+                border-radius: 5px;
+                margin-left: 50px;
+                font-size: 30px;
+                padding-left: 50px;
+                padding-top: 10px;
+            }
+
+            #profileDiv{
+                margin-top: 50px;
+                background-color: pink;
+                height: 500px;
+                width: 90%;
+                border-radius: 50px;
+                margin-left: 50px;
+                font-size: 30px;
+                padding-left: 50px;
+                padding-top: 10px;
+                box-shadow: 10px 10px 5px teal;
+
+            }
+
+            #profileDiv img{
+                border: 2px solid grey;
+                padding: 5px;
+            }
+
+            #name{
+                text-align: center;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 100;
+                color: white;
+            }
+
+            #bio{
+                background-color: lightyellow;
+                margin-left: 300px;
+                margin-right: 50px;
+                padding: 20px 20px 20px 20px;
+                border-radius: 20px;
+            }
+
+            #bio p{
+                font-family: "sofia";
+                font-weight: 500;
+                height: 200px;
+                overflow: scroll;
+                
+            }
+
+            #memories{
+                margin: 70px 70px 70px 70px;
+                border-radius: 50px;
+                background-color: #FFFC00;
+                border: 10px solid lightyellow;
+             
+            }
+
+            #memories h1{
+                padding-top: 50px;
+                text-align: center;
+                font-size: 40px;
+                font-family: 'Brush Script MT', cursive;
+                text-shadow: 3px 3px 3px #aaaaaa;
+
+            }
+            
+            #memories .card{
+                float: left;
+                margin: 30px 150px 30px 150px;
+            }
+
+            div.card{
+                width: 250px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+
+            div.carddate{
+                padding: 10px;
+            }
+
+            .carddate p{
+                color: pink;
+                font-family: 'Rokkitt', serif;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            #heart { 
+                position: relative; 
+                width: 1000px; 
+                height: 900px; 
+                margin: auto;
+            } 
+            
+            #heart:before, #heart:after { 
+                position: absolute; 
+                content: ""; 
+                left: 500px; 
+                top: 0; 
+                width: 500px; 
+                height: 800px; 
+                background: red; 
+                border-radius: 500px 500px 0 0; 
+                transform: rotate(-45deg); 
+                transform-origin: 0 100%; 
+                transition-duration: 3s;
+            } 
+            
+            #heart:after { 
+                left: 0; 
+                transform: rotate(45deg); 
+                transform-origin :100% 100%; 
+            }
+
+            #heart:hover::before{
+                height: 600px;
+                width: 400px;
+                background-image: url("images/left.jpg");
+                background-repeat: no-repeat;
+            }
+
+          #heart:hover::after{
+            height: 600px;
+            width: 400px;
+            left: 100px;
+            background-image: url("images/right.jpg");
+            background-size: cover;
+          }
+
+          #miss{
+              height: 100%;
+              width: 90%;
+              border-radius: 12px;
+              background-color: red;
+              animation-name: missanime;
+              animation-duration: 10s;
+              animation-iteration-count: infinite;
+              margin: auto;
+              text-align: center;
+              margin-top: 50px;
+              margin-bottom: 50px;
+              font-size: 90px;
+              color: #4885ed  ;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              box-shadow: 10px 10px 5px black;
+          }
+
+          @keyframes missanime {
+              0% {background-color: rgb(85, 207, 115);}
+              25% {background-color: pink;}
+              50% {background-color: rgb(61, 106, 156);}
+              100% {background-color: orchid;}
+          }
+
+          #picdiv{
+              height: 300px;
+              width: 300px;
+              background-color: palegreen;
+              margin: auto; 
+              transition-duration: 3s;
+          }
+
+          #picdiv:hover{
+              border-radius: 150px;
+              background-image: url("images/IMG_5555-01.jpeg");
+              border: 3px solid black;
+              padding: 3px;
+              background-size: cover;
+          }
+
+
+      
+        </style>
+    </head>
+    <body>
+        <h1 class="text">My Site</h1>
+        <p class="text" id="firstpara"> Hey guys thanks for visiting my site</p>
+        <div style="margin-bottom: 350px;">
+            <div class="playdiv"><p>I</p></div>
+            <div class="playdiv"><p>L</p></div>
+            <div class="playdiv"><p>O</p></div>
+            <div class="playdiv"><p>V</p></div>
+            <div class="playdiv"><p>E</p></div>
+            <div class="playdiv"><p>U</p></div>
+        </div>
+
+        <div style="margin-bottom: 350px;">
+            <div class="playdiv"><p>D</p></div>
+            <div class="playdiv"><p>E</p></div>
+            <div class="playdiv"><p>E</p></div>
+            <div class="playdiv"><p>P</p></div>
+            <div class="playdiv"><p>A</p></div>
+            <div class="playdiv"><p>K</p></div>
+        </div>
+
+
+        <h5>I Love you.</h5>
+
+
+        <h1 id="middle">some some <span style="text-decoration: line-through;">some</span></h1>
+
+        <div id="heart"></div>
+
+        <div id="picdiv"></div>
+
+        <div id="profileDiv">
+            <h2 id="name">Deepak Gandla</h2>
+            <img style="border-radius: 20px; float:left;"  src="images/IMG_5555-01.jpeg" height="200" width="180">
+            <div id="bio">
+                <p>
+                    Thanks for being with me. I love you so much. The journey so far is excellent and beautiful. I assure you this is a beginning. I wish I had met you earlier in my life.
+
+                    Sometimes I was rude to you. That was not because I had stopped loving you. I was rude to you because I was mad at you. No matter what, I would never leave you.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="memories">
+            <h1>Memories</h1>
+
+            <div class="card">
+                <img src="images/IMG_5555-01.jpeg" alt="MandiPic" style="width:100%">
+                <div class="carddate">
+                    <p>Jan 16, 2016</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/IMG_5555-01.jpeg" alt="MandiPic" style="width:100%">
+                <div class="carddate">
+                    <p>Jan 16, 2016</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/nature.jpg" alt="MandiPic" style="width:100%">
+                <div class="carddate">
+                    <p>Jan 16, 2016</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="images/dog.jpg" alt="MandiPic" style="width:100%">
+                <div class="carddate">
+                    <p>Jan 16, 2016</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <p style="font-size: 150px;">and more to come......</p>
+        </div>
+
+        <div id="miss">
+            <p>I Miss You</p>
+            
+        </div>
+
+    </body>
+</html>
