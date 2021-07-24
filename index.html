@@ -222,7 +222,7 @@
             
             #heart:before, #heart:after { 
                 position: absolute; 
-                content: ""; 
+                content: "";  
                 left: 500px; 
                 top: 0; 
                 width: 500px; 
@@ -300,20 +300,41 @@
               100% {background-color: orchid;}
           }
 
-          #picdiv{
+          #slideview{
               height: 300px;
-              width: 300px;
+              width: 400px;
               background-color: palegreen;
               margin: auto; 
-              transition-duration: 3s;
+              animation-name: slide;
+              animation-duration: 6s;
+              animation-iteration-count: infinite;
           }
 
-          #picdiv:hover{
-              border-radius: 150px;
-              background-image: url("images/IMG_5555-01.jpeg");
-              border: 3px solid black;
-              padding: 3px;
-              background-size: cover;
+          @keyframes slide {
+              0%{
+                  background-image: url("images/IMG_5555-01.jpeg");
+                  background-size: cover;
+              }
+              12%{
+                    background-image: url("images/dog.jpg");
+                    background-size: cover;
+                }
+              25%{
+                  background-image: url("images/heartimage.jpeg");
+                  background-size: cover;
+              }
+              50%{
+                  background-image: url("images/dog.jpg");
+                  background-size: cover;
+              }
+              75%{
+                  background-image: url("images/circleBackground.jpeg");
+                  background-size: cover;
+              }
+              100%{
+                  background-image: url("images/nature.jpg");
+                  background-size: cover;
+              }
           }
 
 
@@ -349,7 +370,7 @@
 
         <div id="heart"></div>
 
-        <div id="picdiv"></div>
+        <div id="slideview"></div>
 
         <div id="profileDiv">
             <h2 id="name">Deepak Gandla</h2>
